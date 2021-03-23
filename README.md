@@ -1,2 +1,3 @@
-# resume-pot
-A dumping ground for LaTeX resume
+# My Resume 📄
+
+Where I publish my LaTeX generated resume
