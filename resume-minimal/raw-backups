@@ -1,0 +1,45 @@
+% Document type set to article, for now
+% There are prettier templates out there, but let's try this
+\documentclass[11pt]{article}
+
+% Beautify packages
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage{xcolor}
+\usepackage{fontawesome}
+\usepackage[sc]{titlesec}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{tabularx}
+
+
+% Page setup
+\usepackage[letterpaper,margin=0.5in]{geometry}
+
+% Placeholder text
+\usepackage{lipsum}
+
+\begin{document}
+    \begin{center}
+        {\Huge \textsc{Minh Tram}} \\ \medskip
+        \begin{tabular}{@{}l@{}}
+            \faicon{envelope} \space minh.tram@mavs.uta.edu \\
+            \faicon{linkedin-square} \space linkedin.com/in/mqt0029 \\
+            \faicon{github} \space www.mqt0029.github.io
+        \end{tabular}
+    \end{center}
+
+    \section*{Education}
+    \hrule height 0.5pt width \textwidth depth 0pt \relax
+    \textbf{Master's of Science in Computer Science \hfill Expected May 2022} \\
+    Coursework: Artificial Intelligence, Neural Networks, Machine Learning \hfill Current GPA: 4.00 \\
+    Research Thesis: Interactive AR Robot Interface \\ 
+    University of Texas at Arlington - Arlington, TX 
+
+    \vspace{0.1cm}
+    \textbf{Bachelor of Science in Computer Science \hfill Aug 2017 - June 2020}\\
+    Coursework: Algorithms, Operating Systems, Artificial Intelligence, Robotics \hfill GPA: 3.58 \\
+    University of Texas at Arlington - Arlington, TX
+
+\end{document}
