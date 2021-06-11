@@ -23,7 +23,7 @@
             science, c, c++, java, python, LaTeX, Linux, robotics, computer vision, deep learning,
             NVIDIA, CUDA, OCRTOC, ARIAC, neural network, computer graphics, AI, machine learning, 
             ARIAC, ROS, Docker},
-            pdfcreator={VSCode LaTeX Workshop pdfTeX}]{hyperref}
+            pdfcreator={VSCode LaTeX Workshop pdfTeX}, hidelinks]{hyperref}
 
 % Page setup
 \usepackage[letterpaper,margin=0.5in]{geometry}
@@ -44,87 +44,101 @@
         \end{minipage}%
         \begin{minipage}[t][0in][b]{0.5\textwidth}
             \raggedleft \small
-            linkedin.com/in/mqt0029 \faicon{linkedin-square}\\
-            www.mqt0029.github.io \faicon{github} \\
-            minh.tram@mavs.uta.edu \faicon{envelope} \\
+            \href{https://linkedin.com/in/mqt0029}{linkedin.com/in/mqt0029 \faicon{linkedin-square}}\\
+            \href{https://mqt0029.github.io}{mqt0029.github.io \faicon{github}} \\
+            \href{mailto:minh.tram@mavs.uta.edu}{minh.tram@mavs.uta.edu \faicon{envelope}} \\
             (817) 313-7802 \faicon{phone}
         \end{minipage}
     \end{center}
 % ---------------------------------------------------------------------------- %
     \section*{Education}
-    \hrule height 0.5pt width \textwidth depth 0pt \relax
-    \textbf{Master's of Science in Computer Science \hfill Expected May 2022} \\
-    % \textbf{Master's of Science in Computer Science \hfill Expected May 2022} \\
-    Coursework: Artificial Intelligence, Neural Networks, Machine Learning \hfill Current GPA: 4.00 \\
-    Research Thesis: Interactive AR to Robot Interface \\ 
-    University of Texas at Arlington - Arlington, TX 
+        \hrule height 0.5pt width \textwidth depth 0pt \relax
+        \textbf{Master's of Science in Computer Science \hfill Expected May 2022} \\
+        % \textbf{Master's of Science in Computer Science \hfill Expected May 2022} \\
+        Coursework: Artificial Intelligence, Neural Networks, Machine Learning \hfill Current GPA: 3.67 \\
+        Research Thesis: Interactive AR to Robot Interface \\ 
+        University of Texas at Arlington - Arlington, TX 
 
-    \textbf{Bachelor of Science in Computer Science \hfill Aug 2017 - June 2020}\\
-    Coursework: Algorithms, Operating Systems, Artificial Intelligence, Robotics \hfill GPA: 3.58 \\
-    University of Texas at Arlington - Arlington, TX
+        % \textbf{Bachelor of Science in Computer Science \hfill Aug 2017 - June 2020}\\
+        % Coursework: Algorithms, Operating Systems, Artificial Intelligence, Robotics \hfill GPA: 3.58 \\
+        % University of Texas at Arlington - Arlington, TX
 % ---------------------------------------------------------------------------- %
     \section*{Projects}
-    \hrule height 0.5pt width \textwidth depth 0pt \relax
-    \vspace{0.1cm}
-    \subsection*{IROS 2020 OCRTOC}
-    \vspace{-0.2cm}
-    % \textbf{IROS 2020 OCRTOC} \\
-    \textit{Open Cloud Robot Table Organization Challenge} \vspace {-0.1cm}
-    \begin{itemize}[noitemsep]
-        \item Utilized NVIDIA DOPE to detect physical objects for robot arm detection and organization tasks
-        \item Eliminated hardware integration by simulating hardware characteristics using ROS and
-        Gazebo 9 simulator
-        \item Created unified development environment to eliminate software discrepancies by creating a
-        Docker image
-    \end{itemize}
-    \subsection*{Real-Time VR-2-Robot Head}
-    \vspace{-0.2cm}
-    % \textbf{Real-Time VR-2-Robot Head} \\
-    \textit{Interactive human-to-robot vision}
-    \vspace{-0.1cm}
-    \begin{itemize}[noitemsep]
-        \item Designed 3-axis head motion simulator to drive mounted stereo camera for user's head motion tracking
-        \item Reduced hardware-software lag time by 40\% by packing sensor data through Serial-to-USB asynchronously
-        \item Implemented vision and sensor based homing sequence to synchronize robot and human pilot head
-        \item Utilized ZED, Unity, and Oculus SDK to stream live video feed for real-time pilot headset visualization
-    \end{itemize} 
-    \subsection*{Mini Linux}
-    \vspace{-0.2cm}
-    % \textbf{Mini Linux} \\
-    \textit{Minimal Working Example UNIX simulator}
-    \vspace{-0.1cm}
-    \begin{itemize}[noitemsep]
-        \item Implemented bash-like CLI for command handling to provide an effective, interactive command interface
-        \item Incorporated persistent FAT32 file system for permanent data storage through file system virtualization
-        \item Added multithreading functionality to allow parallel and background software execution by
-        using fork()
-        \item Ensured safe thread handling to prevent resource hog and deadlocks by utilizing
-        semaphores and scheduling
-    \end{itemize}
+        \hrule height 0.5pt width \textwidth depth 0pt \relax
+        \vspace{0.1cm}
+
+        % \subsection*{NIST ARIAC 2021}
+        % \vspace{-0.2cm}
+        % \textit{Agile Robotics for Industrial Automation Competition by National Institute of Standards and Technology} \vspace {-0.1cm}
+        % \begin{itemize}[noitemsep]
+        %     \item Utilized NVIDIA DOPE to detect physical objects for robot arm detection and organization tasks
+        %     \item Eliminated hardware integration by simulating hardware characteristics using ROS and
+        %     Gazebo 9 simulator
+        %     \item Created unified development environment to eliminate software discrepancies by creating a
+        %     Docker image
+        % \end{itemize}
+
+        \subsection*{IROS 2020 OCRTOC}
+            \vspace{-0.2cm}
+            \textit{Open Cloud Robot Table Organization Challenge} \vspace {-0.1cm}
+            \begin{itemize}[noitemsep]
+                \item Utilized NVIDIA DOPE to detect physical objects for robot arm detection and organization tasks
+                \item Eliminated hardware integration by simulating hardware characteristics using ROS and
+                Gazebo 9 simulator
+                \item Created unified development environment to eliminate software discrepancies by creating a
+                Docker image
+            \end{itemize}
+
+        \subsection*{Real-Time VR-2-Robot Head}
+            \vspace{-0.2cm}
+            \textit{Interactive human-to-robot vision}
+            \vspace{-0.1cm}
+            \begin{itemize}[noitemsep]
+                \item Designed 3-axis head motion simulator to drive mounted stereo camera for user's head motion tracking
+                \item Reduced hardware-software lag time by 40\% by packing sensor data through Serial-to-USB asynchronously
+                \item Implemented vision and sensor based homing sequence to synchronize robot and human pilot head
+                \item Utilized ZED, Unity, and Oculus SDK to stream live video feed for real-time pilot headset visualization
+            \end{itemize} 
+
+        \subsection*{Mini Linux}
+            \vspace{-0.2cm}
+            \textit{Minimal Working Example UNIX simulator}
+            \vspace{-0.1cm}
+            \begin{itemize}[noitemsep]
+                \item Implemented bash-like CLI for command handling to provide an effective, interactive command interface
+                \item Incorporated persistent FAT32 file system for permanent data storage through file system virtualization
+                \item Added multithreading functionality to allow parallel and background software execution by
+                using fork()
+                \item Ensured safe thread handling to prevent resource hog and deadlocks by utilizing
+                semaphores and scheduling
+            \end{itemize}
 % ---------------------------------------------------------------------------- %
     \section*{Experience}
-    \hrule height 0.5pt width \textwidth depth 0pt \relax
-    \vspace{0.1cm}
-    \subsection*{Graduate Research Assistant \hfill Aug 2020 - Present} 
-    \vspace{-0.2cm}
-    % \textbf{Graduate Research Assistant \hfill Aug 2020 - Present} \\
-    \textit{Active research in robotics and interactive AR pose estimation fusion}
-    \vspace{-0.1cm}
-    \begin{itemize}[noitemsep]
-        \item Implemented OpenCV, PyTorch, Intel RealSense for objects detection and pose estimation on Jetson Nano
-        \item Reduced model training time by porting development environment to higher-end machines
-        using Docker
-        \item Created synthetic training data for object pose detection using Unreal Engine 4 and
-        NVIDIA's NDDS
-        \item Trained object detection model from 3D stereolithography files for IROS 2020 OCRTOC competition 
-    \end{itemize}
+        \hrule height 0.5pt width \textwidth depth 0pt \relax
+        \vspace{0.1cm}
+
+        \subsection*{Graduate Research Assistant \hfill Aug 2020 - Present} 
+        \vspace{-0.2cm}
+        % \textbf{Graduate Research Assistant \hfill Aug 2020 - Present} \\
+        \textit{Active research in robotics and interactive AR pose estimation fusion}
+        \vspace{-0.1cm}
+        \begin{itemize}[noitemsep]
+            \item Implemented OpenCV, PyTorch, Intel RealSense for objects detection and pose estimation on Jetson Nano
+            \item Reduced model training time by porting development environment to higher-end machines
+            using Docker
+            \item Created synthetic training data for object pose detection using Unreal Engine 4 and
+            NVIDIA's NDDS
+            \item Trained object detection model from 3D stereolithography files for IROS 2020 OCRTOC competition 
+        
+        \end{itemize}
 % ---------------------------------------------------------------------------- %
     \section*{Technical Skills}
-    \hrule height 0.5pt width \textwidth depth 0pt \relax
-    \vspace{0.1cm}
-    \textbf{Proficient:} Python, ROS, CUDA, \LaTeX, git, Docker $\Vert$ \textbf{Familiar:}
-    C\texttt{++}, Java, PyTorch, Tensorflow, Unity\\
-    \textbf{Hardware:} NVIDIA Jetson, Universal Robot UR5e, Oculus VR, Intel RealSense, Zed
-    Stereo Camera
+        \hrule height 0.5pt width \textwidth depth 0pt \relax
+        \vspace{0.1cm}
+
+        \textbf{Proficient:} Python, ROS, CUDA, \LaTeX, git, Docker $\Vert$ \textbf{Familiar:}
+        C\texttt{++}, Java, PyTorch, Tensorflow, Unity\\
+        \textbf{Hardware:} NVIDIA Jetson, Universal Robot UR5e, Oculus VR, Intel RealSense, Zed
+        Stereo Camera
 
 \end{document}
